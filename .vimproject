@@ -7,4 +7,7 @@ DRbServe=/$PWD filter="*.rb Rakefile README.*" {
  test=test {
   test_helper.rb
  }
+ example=example{
+  test.rb
+ }
 }
