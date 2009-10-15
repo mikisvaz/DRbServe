@@ -10,7 +10,9 @@ begin
     gem.email = "miguel.vazquez@fdi.ucm.es"
     gem.homepage = "http://github.com/mikisvaz/DRbServe"
     gem.authors = ["Miguel Vazquez"]
-    gem.add_development_dependency "thoughtbot-shoulda"
+
+    gem.files = Dir['lib/*.rb', 'example/*.rb']
+    gem.add_dependency('drb')
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError

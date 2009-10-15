@@ -1,0 +1,10 @@
+DRbServe=/$PWD filter="*.rb Rakefile README.*" {
+ Rakefile
+ README.rdoc
+ lib=lib {
+  DRbServe.rb
+ }
+ test=test {
+  test_helper.rb
+ }
+}
