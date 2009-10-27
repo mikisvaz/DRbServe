@@ -1,4 +1,6 @@
-require 'DRb_serve'
+$: << File.join(File.dirname(File.dirname(__FILE__)),'lib')
+
+require 'DRbServe'
 
 # Load this file once and them open a irb session. Try loading the module, you
 # will be using DRb to connect to the server
