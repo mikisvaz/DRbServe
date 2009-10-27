@@ -14,7 +14,7 @@ module DRbServe
 
   def uri=(uri)
     puts "Saving #{ uri } in #{ self.uri_filename }"
-    FileUtils.mkdir_p FileUtils.dirname(uri_filename) unless File.exist? FileUtils.dirname(uri_filename)
+    FileUtils.mkdir_p FileUtils.dirname(uri_filename) unless File.exist? File.dirname(uri_filename)
     fout = File.open(uri_filename,'w')
     fout.puts uri
     fout.close
