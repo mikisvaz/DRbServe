@@ -6,13 +6,12 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "DRbServe"
     gem.summary = %Q{Share a module between processes using DRb}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.description = %Q{One process loads the module and serves some methods unsing DRb. Other processes mangle those methods to hook up with the DRb server}
     gem.email = "miguel.vazquez@fdi.ucm.es"
     gem.homepage = "http://github.com/mikisvaz/DRbServe"
     gem.authors = ["Miguel Vazquez"]
 
     gem.files = Dir['lib/*.rb', 'example/*.rb']
-    gem.add_dependency('drb')
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError
